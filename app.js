@@ -7,14 +7,13 @@ require('./lib/seed')
 require('./lib/models')
 var cors = require('cors')
 
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var apiRouter = require('./routes/api');
 
 var app = express();
 app.use(cors())
-
-//mysql://b3b0e1304c72b4:8561deaa@us-cdbr-east-03.cleardb.com/heroku_ebfa529b3b76143?reconnect=true
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
